@@ -11,4 +11,4 @@ export default function createInt8TypedArray(position, length, value) {
     } catch (e) {
       throw Error('Position outside range');
     }
-}
+};
