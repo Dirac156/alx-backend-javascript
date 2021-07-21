@@ -1,6 +1,4 @@
 /* eslint-disable */
 export default function getStudentIdsSum(students) {
-    return students.reduce((accumulator, currentValue) => {
-        return currentValue.id + accumulator;
-    });
+    return students.reduce((accumulator, currentValue) => (currentValue.id + accumulator), 0);
 };
