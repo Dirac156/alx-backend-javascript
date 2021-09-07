@@ -1,7 +1,2 @@
-/* eslint-disable */
-function displayMessage(text) {
-    // process.stdout.write(`${text}\n`)
-    console.log(text);
-};
-
+const displayMessage = (text) => console.log(text);
 module.exports = displayMessage;
