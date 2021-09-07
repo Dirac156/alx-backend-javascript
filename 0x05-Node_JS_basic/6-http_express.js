@@ -1,9 +1,13 @@
+/* eslint linebreak-style: ["error", "windows"] */
 const express = require('express');
 
 const app = express();
-
 const port = 1245;
 
-app.listen(port, () => {
-  console.log(`App is ruining on port ${port}`);
+app.get('/', (_, res) => {
+  res.send('Hello Holberton School!');
 });
+
+app.listen(port);
+
+module.exports = app;

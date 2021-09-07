@@ -12,7 +12,6 @@ const countStudents = (path) => {
       students = students.map((item) => item.split(','));
       const nStudents = students.length ? students.length - 1 : 0;
       message = `Number of students: ${nStudents}`;
-      console.log(message);
       messages.push(message);
       const subjects = {};
       for (const i in students) {
@@ -26,7 +25,6 @@ const countStudents = (path) => {
         message = `Number of students in ${key}: ${
           subjects[key].length
         }. List: ${subjects[key].join(', ')}`;
-        console.log(message);
         messages.push(message);
       }
       res(messages);
