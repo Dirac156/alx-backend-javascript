@@ -1,5 +1,6 @@
+/* eslint-disable */
+function displayMessage(text) {
+    process.stdout.write(`${text}\n`)
+};
 
-
-export function displayMessage() {
-    
-}
+module.exports = displayMessage;
