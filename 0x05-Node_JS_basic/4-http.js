@@ -1,4 +1,4 @@
-/* eslint linebreak-style: ["error", "windows"] */
+/* eslint-disable */
 const http = require('http');
 
 const port = 1245;
