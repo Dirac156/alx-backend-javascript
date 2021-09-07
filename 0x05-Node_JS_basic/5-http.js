@@ -1,4 +1,4 @@
-/* eslint linebreak-style: ["error", "windows"] */
+/* eslint-disable */
 
 const http = require('http');
 const countStudents = require('./utils');
@@ -13,7 +13,14 @@ const app = http.createServer((req, res) => {
   if (req.url === '/students') {
     countStudents(path)
       .then((data) => {
-        res.write(`This is the list of our students\n${data}`);
+        res.write('This is the list of our students\n')
+        data = data.map((item, idx) => {
+          if (idx === 0) {
+            res.write(item + '\n');
+          } else {
+            res.write(item + '\n')
+          }
+        })
         res.end();
       })
       .catch(() => {

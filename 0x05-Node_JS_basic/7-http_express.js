@@ -1,4 +1,4 @@
-/* eslint linebreak-style: ["error", "windows"] */
+/* eslint-disable */
 const express = require('express');
 const countStudents = require('./utils');
 
