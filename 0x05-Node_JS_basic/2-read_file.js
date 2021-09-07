@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 const fs = require('fs');
 
 const countStudents = (path) => {
@@ -9,8 +10,8 @@ const countStudents = (path) => {
     for (const row of data) {
       const student = row.split(',');
       if (!subjects[student[3]]) subjects[student[3]] = [];
-        subjects[student[3]].push(student[0]);
-      }
+      subjects[student[3]].push(student[0]);
+    }
     for (const subject in subjects) {
       if (subject) console.log(`Number of students in ${subject}: ${subjects[subject].length}. List: ${subjects[subject].join(', ')}`);
     }
